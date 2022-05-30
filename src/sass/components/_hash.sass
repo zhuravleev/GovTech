@@ -1,0 +1,51 @@
+.hash
+    padding: $grid
+    background-color: $white
+
+    &__wrapper
+        
+        & h1
+            color: $blue
+
+    &__inner
+        display: grid
+        grid-template-columns: 45% 45%
+        grid-gap: 30px
+        margin-top: 50px
+
+        & p
+            @include bold
+            font-size: 25px
+            text-decoration: underline
+
+            &:nth-child(1)
+                color: $blue
+
+            &:nth-child(2)
+                color: $pink
+
+            &:nth-child(3)
+                color: $pink
+
+            &:nth-child(4)
+                color: $blue
+
+            &:nth-child(5)
+                color: $blue
+
+            &:nth-child(6)
+                color: $pink
+
+            &:nth-child(7)
+                color: $pink
+
+            &:nth-child(8)
+                color: $blue
+
+            &:nth-child(9)
+                color: $blue
+
+@media (max-width: 815px)
+    .hash__inner
+        grid-template-columns: 90%
+                

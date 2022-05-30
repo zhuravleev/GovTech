@@ -1,0 +1,45 @@
+.moscow 
+
+    padding: $grid
+    background-color: $pink
+
+    &__wrapper
+        color: $white
+
+    &__inner
+        display: grid
+        grid-template-columns: 45% 45%
+        grid-gap: 20px
+        margin-top: 40px
+
+        &-item
+            padding: 50px
+            border-radius: 10px
+            background-color: $white
+            color: $pink
+            cursor: pointer
+
+            & h2
+                
+                font-size: 24px
+                line-height: 28px
+                @include bold
+
+.subtitle
+    margin-top: 15px
+    font-size: 18px
+    @include roboto
+    color: $pink
+    line-height: 23px
+    display: none
+
+.highlight .subtitle
+    display: block !important
+
+
+
+@media (max-width: 815px)
+    .moscow__inner
+        grid-template-columns: 90%
+        justify-content: center
+            

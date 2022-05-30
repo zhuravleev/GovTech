@@ -1,0 +1,15 @@
+<svg width="143" height="109" viewBox="0 0 143 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="10.5" y="1.5" width="121.29" height="83.8692" rx="6.5" stroke="white" stroke-width="3"/>
+<rect x="26.5" y="11.5" width="32" height="41" rx="3.5" stroke="white" stroke-width="3"/>
+<rect x="26.5" y="60.5" width="32" height="15" rx="3.5" stroke="white" stroke-width="3"/>
+<path d="M70.5 13.5L105.5 13.5L105.5 33.1338L85.9918 33.1338L85.9918 54.5L94.5984 54.5L94.5984 40.0634" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="95" cy="39.5" rx="3" ry="2.5" transform="rotate(90 95 39.5)" fill="white"/>
+<ellipse cx="98" cy="26.5" rx="2" ry="2.5" transform="rotate(90 98 26.5)" fill="white"/>
+<circle cx="114.5" cy="75.5" r="2" transform="rotate(90 114.5 75.5)" fill="white"/>
+<ellipse cx="99.5" cy="58" rx="1.5" ry="2" transform="rotate(90 99.5 58)" fill="white"/>
+<circle cx="71.5" cy="48.5" r="2" transform="rotate(90 71.5 48.5)" fill="white"/>
+<circle cx="70" cy="14" r="2.5" transform="rotate(90 70 14)" fill="white"/>
+<path d="M97.4615 26.5L77.8462 26.5L77.8462 62.0467L101.5 62.0467L101.5 69.5L71.5 69.5L71.5 48.2867" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path d="M99.5 58.1875L99.5 47.5L114.5 47.5L114.5 74.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path d="M141.406 96.7896C140.669 102.634 135.68 107.154 129.635 107.154H13.3645C7.32 107.154 2.33124 102.634 1.59392 96.7896H141.406Z" stroke="white" stroke-width="3"/>
+</svg>

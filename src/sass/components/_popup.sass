@@ -1,0 +1,157 @@
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0 
+    color: $white
+    opacity: 0
+    visibility: hidden
+    overflow-x: hidden
+    overflow-y: auto
+    transition: all 0.5s ease 0s
+    z-index: 901
+
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px 10px
+        z-index: 20
+        
+
+    &__content
+        background-color: $white
+        color: #000
+        max-width: 90%
+        padding: 25px 50px 25px 50px
+        position: relative
+
+    &__wrapper
+        display: flex
+
+    &__title 
+
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        width: 40%
+
+        & img
+            width: auto !important
+            height: 100% !important
+            position: relative
+            top: 30px
+
+    &__text
+
+        margin-left: 120px
+        width: 100%
+        padding-bottom: 25px
+
+        & h2
+            @include bold
+
+            margin-bottom: 15px
+
+        & p
+            @include roboto
+            color: #4E4E4E
+            margin: 15px 0px !important
+            
+
+        & form
+            background-color: #f7f7f7
+            border-radius: 40px
+            padding: 20px 35px
+            width: 70%
+
+            & p
+                
+                margin-left: 35px !important
+
+            
+            
+    &__close
+        position: absolute
+        right: 25px
+        top: 20px
+        cursor: pointer
+        
+        & img
+            width: 30px !important
+            height: 30  px !important
+
+.open
+    opacity: 1
+    visibility: visible
+
+.bg
+    background-color: rgba(0, 0, 0, 0.7)
+    cursor: pointer
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+
+    
+
+
+.popup
+
+    &__wrapper
+        max-height: 100vh
+        width: 90%
+
+        & ul li
+            color: #000000
+            @include roboto
+            font-size: 20px
+            line-height: 100%
+            margin-bottom: 10px
+
+    &__countries
+        flex-direction: column
+        color: $blue
+        & h2
+            @include bold
+            font-size: 30px
+            margin-bottom: 10px
+            
+        & p
+            @include roboto
+            font-size: 20px
+            margin-bottom: 10px
+
+        & ul li
+            color: $blue
+
+    &__content
+        width: 80%
+
+#smartPopup .popup__content
+    background-color: #468B9F
+
+#urbanPopup .popup__content
+    background-color: #1DACAE
+
+#govPopup .popup__content
+    background-color: #B77AD9
+
+#civicPopup .popup__content
+    background-color: #39BBDF
+
+#smartPopup .popup__wrapper ul li
+    color: $white !important
+
+#urbanPopup .popup__wrapper ul li
+    color: $white !important
+
+#govPopup .popup__wrapper ul li
+    color: $white !important
+
+#civicPopup .popup__wrapper ul li
+    color: $white !important

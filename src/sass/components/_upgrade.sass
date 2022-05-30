@@ -1,0 +1,190 @@
+.upgrade
+    padding: $grid
+    background-color: $blue
+    position: relative
+
+
+    &__wrapper
+        color: $pink
+        margin-bottom: 100px
+
+    &__aside
+        position: absolute
+        right: 70px
+        top: 50px
+
+        & img
+
+            &:nth-child(1)
+                display: block
+
+            &:nth-child(2)
+                display: none
+                
+            
+            
+
+    &__inner
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-row-gap: 40px
+        grid-column-gap: 40px
+        margin-bottom: 50px
+        
+
+
+        &-item
+
+            & h2
+                font-size: 35px
+                color: $white
+                @include bold
+                margin-bottom: 20px
+
+            & p, ul li
+                color: $white
+                @include roboto-l
+                font-size: 25px
+                width: 90%
+
+            & ul li
+                color: $white
+                @include roboto-l
+                font-size: 25px
+                margin-bottom: 20px
+
+                &:nth-last-child(1)
+                    margin-bottom: 0px
+
+    &__popup
+        display: flex
+        align-items: center
+
+        &-item
+            width: 40vw 
+            cursor: pointer
+            
+            background: #B77AD9
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+
+            & h2
+                color: $white
+                @include bold
+                font-size: 30px
+                margin-left: 10px
+
+            & p
+                color: $white
+                @include roboto
+                line-height: 28px
+                font-size: 24px
+                margin: 30px 10px 0px 30px
+
+        &-title
+            display: flex
+            align-items: center
+            margin: 30px 30px
+
+            & img
+                margin-right: 20px
+
+        &-arrow
+            margin: 0px 20px 25px 20px
+            display: flex
+            justify-content: flex-end
+
+        &-button
+            margin: 40px 0px
+            
+            & button
+                background-color: $white    
+                color: $pink
+
+                &:hover
+                    transition: 0.4s
+                    background-color: $pink
+                    color: $white
+
+
+        
+
+
+#niderlands__preview
+    background-color: #39BBDF
+
+#korea__preview
+    background-color: $pink
+    margin-left: 80px
+
+@media (max-width: 815px)
+
+    #korea__preview
+        background-color: $pink
+        margin-left: 0px
+
+    .upgrade
+        &__wrapper h1
+            font-size: 35px
+
+        &__inner
+            grid-template-columns: 100%
+
+            &-item
+
+                margin-bottom: 30px
+
+                &:nth-child(1)
+                    grid-area: auto
+
+                &:nth-child(2)
+                    grid-area: auto
+
+                &:nth-child(3) 
+                    grid-area: auto
+
+                & ul
+                    margin-left: 25px
+
+                    & li
+                        font-size: 20px
+
+                & h2
+                    font-size: 30px
+
+                & p
+                    font-size: 20px
+
+        &__popup
+            flex-direction: column
+
+            &-item
+                width: 100%
+                margin-bottom: 30px
+
+            &-button button
+                width: 100%
+
+        &__aside
+
+            & img
+
+                &:nth-child(1)
+                    display: none
+                
+                &:nth-child(2)
+                    display: block
+                    
+
+@media (max-width: 500px)
+    .upgrade__popup-item p
+        font-size: 18px
+                
+
+                
+                    
+
+
+
+
+            
+             

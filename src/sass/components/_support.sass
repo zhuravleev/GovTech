@@ -1,0 +1,251 @@
+.support
+    padding: $grid
+    background-color: $white
+    position: relative
+
+
+    &__wrapper
+        color: $pink
+        margin-bottom: 100px
+
+    &__aside
+        position: absolute
+        right: 70px
+        top: 50px
+
+        & img
+
+            &:nth-child(1)
+                display: block
+
+            &:nth-child(2)
+                display: none
+                
+            
+            
+
+    &__inner
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-row-gap: 40px
+        grid-column-gap: 40px
+        margin-bottom: 50px
+        
+
+
+        &-item
+
+            & h2
+                font-size: 35px
+                color: $blue
+                @include bold
+                margin-bottom: 20px
+
+            & p, ul li
+                color: $blue
+                @include roboto-l
+                font-size: 25px
+                width: 90%
+
+            & ul li
+                color: $blue
+                @include roboto-l
+                font-size: 25px
+                margin-bottom: 20px
+
+                &:nth-last-child(1)
+                    margin-bottom: 0px
+
+    &__popup
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &-item
+            background: #B77AD9
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+            cursor: pointer
+
+            & h2
+                color: $white
+                @include bold
+                font-size: 30px
+
+
+            & p
+                color: $white
+                @include roboto
+                line-height: 28px
+                font-size: 24px
+                margin: 30px 10px 0px 30px
+
+        &-title
+            display: flex
+            align-items: flex-start
+            margin: 30px 30px
+            flex-direction: column
+
+            & img
+                margin-right: 20px
+
+        &-arrow
+            margin: 0px 20px 25px 20px
+            display: flex
+            justify-content: flex-end
+
+            & img:nth-child(1)
+                display: block
+            & img:nth-child(2)
+                display: none
+                
+                
+
+        &-button
+            margin: 40px 0px
+            
+            & button
+                background-color: $blue
+                color: $white
+
+                &:hover
+                    transition: 0.4s
+                    background-color: $white
+                    color: $blue
+
+
+        
+
+
+#poland__preview
+    background-color: #39BBDF
+    width: 25%
+    margin-right: 15px
+
+#france__preview
+    background-color: $pink
+    width: 25%
+    margin-right: 15px
+
+#usa__preview
+    background-color: #39BBDF
+    width: 50%
+
+@media (max-width: 940px)
+    .support__popup-item
+
+        & h2
+            font-size: 23px
+
+        & p
+            font-size: 20px
+
+@media (max-width: 815px)
+    #poland__preview
+        width: 100%
+
+    #france__preview
+        width: 100%
+
+    #usa__preview
+        width: 100%
+        grid-area: 2 / 1 / 3 / 3
+
+    .support
+        &__wrapper h1
+            font-size: 35px
+
+        &__inner
+            grid-template-columns: 100%
+
+            &-item
+
+                margin-bottom: 30px
+
+                &:nth-child(1)
+                    grid-area: auto
+
+                &:nth-child(2)
+                    grid-area: auto
+
+                &:nth-child(3) 
+                    grid-area: auto
+
+                & ul
+                    margin-left: 25px
+
+                    & li
+                        font-size: 20px
+
+                & h2
+                    font-size: 30px
+
+                & p
+                    font-size: 20px
+
+        &__popup
+            display: grid
+            grid-template-columns: 45% 45%
+            grid-gap: 20px
+
+            &-title
+                align-items: center
+                
+                & img
+                    margin: 0 auto
+
+                & h2
+                    margin-top: 10px
+                    text-align: center
+
+
+            &-item
+                width: auto
+                margin-bottom: 30px
+
+                & p
+                    text-align: center
+
+
+            &-button button
+                width: 100%
+
+            &-arrow
+                margin-top: 25px
+                justify-content: center
+
+                & img:nth-child(1)
+                    display: none
+                & img:nth-child(2)
+                    display: block
+                    
+
+        &__aside
+
+            & img
+
+                &:nth-child(1)
+                    display: none
+                
+                &:nth-child(2)
+                    display: block
+
+
+@media (max-width: 430px)
+    #poland__preview
+        height: 30vh
+
+    #france__preview
+        height: 30vh
+                    
+    .support__popup-title
+        margin: 30px auto
+                
+
+                
+                    
+
+
+
+
+            
+             
